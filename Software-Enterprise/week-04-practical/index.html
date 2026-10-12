@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-Driven Programming Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Event-Driven Programming Demo</h1>
+
+        <!-- Task 1 and Task 2 -->
+        <section class="card">
+            <h2>Task 2: Basic Event Handling</h2>
+            <input
+                type="text"
+                id="inputField"
+                placeholder="Type something"
+            >
+            <button id="submitBtn">Submit</button>
+            <p id="output" aria-live="polite"></p>
+        </section>
+
+        <!-- Task 3: Event Delegation -->
+        <section class="card">
+            <h2>Task 3: Event Delegation</h2>
+            <button id="addBtn">Add New Button</button>
+            <div id="buttonContainer"></div>
+        </section>
+
+        <!-- Task 5: Observer Pattern -->
+        <section class="card">
+            <h2>Task 5: Observer Pattern</h2>
+            <p>Type in the input field above to update both observers.</p>
+            <div id="observerContainer">
+                <p id="observer1" class="observer">
+                    Observer 1: Waiting for input
+                </p>
+                <p id="observer2" class="observer">
+                    Observer 2: Waiting for input
+                </p>
+            </div>
+        </section>
+
+        <!-- Task 6: Content Copying Experiment -->
+        <section class="card">
+            <h2>Task 6: Preventing Content Copying</h2>
+            <p id="protectedText">
+                Try selecting or copying this paragraph.
+                The JavaScript will prevent both actions.
+            </p>
+            <p id="copyStatus" aria-live="polite"></p>
+        </section>
+    </main>
+</body>
+</html>
